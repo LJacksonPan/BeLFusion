@@ -50,7 +50,8 @@ class DiffusionTrainer(BaseTrainer):
         self.device = device
         self.data_loader = data_loader
         self.batch_size = data_loader.batch_size
-        self.load_mmgt = load_mmgt
+        # self.load_mmgt = load_mmgt
+        self.load_mmgt = False
 
         if self.load_mmgt:
             valid_path = config["arch"]["args"]["embedder_pred_path"].replace(".pth", f"_mmGT_{valid_data_loader.dataset._get_hash_str()}.json")

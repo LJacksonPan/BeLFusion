@@ -31,7 +31,7 @@
     "obs_length": 123,
     "pred_length": 123,
     "data_loader_training": {
-        "type": "AMASSDataLoader_Auto",
+        "type": "AMASSDataLoader",
         "args": {
             "drop_root": true,
             "stride": 10,
@@ -61,7 +61,7 @@
         }
     },
     "data_loader_test": {
-        "type": "AMASSDataLoader_Auto",
+        "type": "AMASSDataLoader",
         "args": {
             "drop_root": true,
             "stride": 400,
